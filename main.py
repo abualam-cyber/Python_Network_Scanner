@@ -31,10 +31,14 @@ def scan_network(network, ports): # Scans a network for open ports on all IPs.
                 for i in open_ports:
                     print(f" Open Ports: ")
                     print(f"              {i}\n")
+            else:
+                print(f"No ports open in IP {ip}")
             if closed_ports:
                 for i in closed_ports:
                     print(f" Closed Ports: ")
                     print(f"              {i}\n")
+            else:
+                print(f"No ports closed in IP {ip}")
 
 
 if __name__ == "__main__":
